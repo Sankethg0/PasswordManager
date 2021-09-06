@@ -64,7 +64,7 @@ public class Register extends AppCompatActivity {
                    public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(Register.this,"User Created.",Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                            startActivity(new Intent(getApplicationContext(),Login.class));
                         }else{
                             Toast.makeText(Register.this,"Failed to Register."+task.getException(),Toast.LENGTH_SHORT).show();
 
@@ -74,5 +74,10 @@ public class Register extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void gotoLogin(View view) {
+        startActivity(new Intent(getApplicationContext(),Login.class));
+        finish();
     }
 }

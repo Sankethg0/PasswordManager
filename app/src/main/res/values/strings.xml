@@ -7,4 +7,6 @@
     <string name="already">Already Have An Account? Click Here...</string>
     <string name="login">Login</string>
     <string name="newAcc">Don\'t Have An Account? Click Here...</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="logout">Logout</string>
 </resources>
